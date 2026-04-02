@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #ffd6e0, #ffffff);
+  color: #5a2a3a;
+  text-align: center;
+}
+
+.container {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255,105,135,0.6);
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease forwards;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #ff2e63;
+  animation: fadeIn 2s ease forwards;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+}
+
+.final {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: #ff2e63;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="Heartbreak Anniversary - Giveon.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("bgMusic");
+
+// Try autoplay (works on some browsers)
+music.play().catch(() => {
+  console.log("Autoplay blocked");
+});
+
+// Force play on ANY user interaction
+document.addEventListener("click", () => {
+  music.play();
+}, { once: true });
+
+document.addEventListener("touchstart", () => {
+  music.play();
+}, { once: true });
+</script>
+<div class="container">
+  <img src="YOUR_IMAGE_HERE.jpg" alt="Nishal">
+
+  <h1>Hey My Princess 💖</h1>
+
+  <p>
+    Hey, I’m Nishal… your lovely husband 💕
+    From the moment you came into my life, everything changed in the most beautiful way.
+    You didn’t just become a part of my life… you became my life.
+  </p>
+
+  <p>
+    My whole life is for you. Every dream I chase, every step I take,
+    every success I achieve… it’s all because of you.
+    You are the reason I smile, the reason I keep going, and the reason I believe in myself.
+  </p>
+
+  <p>
+    You literally changed my life in ways I can’t even explain.
+    I can’t imagine a life without you… not even for a second.
+    You are my peace, my happiness, my everything.
+  </p>
+
+  <p>
+    I pinky promise you… I will never leave you,
+    I will never do things that hurt you,
+    and I will always stand beside you no matter what.
+    Through every up and every down… I will be there.
+  </p>
+
+  <p class="final">
+    I really love you so much… my dear fairy princess Nidha ❤️
+    — Yours forever, Nishal 💖
+  </p>
+</div>
+
+</body>
+</html>
