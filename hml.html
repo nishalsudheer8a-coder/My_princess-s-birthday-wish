@@ -131,6 +131,19 @@ const descriptions = [
   "There is nothing more beautiful in my life than you… and all I wish for is to spend the rest of my life with you, watching your smile every day… until my last moment resting on your shoulder 💍"
 ];
 
+const titles = [
+  "The Moment I Fell for Your Eyes 💖",
+  "My Safe Place – You 🤍",
+  "Your Crazy Love I Adore 😄",
+  "The Best Thing in My Life ✨",
+  "Every Shade of You ❤️", 
+  "You Changed My World 🌍",
+  "Our Beautiful Moments Together 💫",
+  "Your Smile, My Favorite Thing 😊",
+  "From School Days to Forever 📖",
+  "My Forever With You 💍"
+];
+
 for (let i = 1; i <= 10; i++) {
   const section = document.createElement('div');
   section.className = 'section';
@@ -138,7 +151,7 @@ for (let i = 1; i <= 10; i++) {
   section.innerHTML = `
     <img src="IMAGE_${i}.jpg" alt="memory">
     <div class="text">
-      <h2>Memory ${i}</h2>
+      <h2>${titles[i-1]}</h2>
       <p>${descriptions[i-1]}</p>
     </div>
   `;
